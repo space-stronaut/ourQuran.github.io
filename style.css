@@ -24,6 +24,11 @@ nav{
 img.hero-img{
     max-width: 50%;
     z-index: 2;
+    animation: float 0.9s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .btn{
     z-index: 2;
@@ -38,6 +43,15 @@ span.green-text{
     color: #4fce51;
 }
 
+/* keyframes */
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
 
 /* responsive breakpoint */
 
